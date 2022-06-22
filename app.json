@@ -19,7 +19,15 @@
 		"gclone_para_override": {
 			"description": "Leave this if you don't know how to use it",
 			"required": false
-		}
-	},
-    	"stack": "container"
+		      }
+  },
+  "buildpacks": [{
+      "url": "heroku/python"
+    }],
+  "formation": {
+      "web": {
+          "quantity": 1,
+          "size": "free"
+      }
+  }
 }

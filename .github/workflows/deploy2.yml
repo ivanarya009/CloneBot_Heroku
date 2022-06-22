@@ -15,7 +15,7 @@ jobs:
           usedocker: true
           docker_heroku_process_type: web
           stack: "container"
-          region: "us"
+          
         env:
           HD_telegram_token: ${{secrets.telegram_token}}
           HD_user_ids: ${{secrets.user_ids}}
